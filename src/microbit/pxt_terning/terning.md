@@ -86,9 +86,8 @@ tips om du står fast!
 - [ ] Du kan endre på __4__-tallet i `velg tilfeldig 0 til 4`{.microbitmath}-klossen.
 Hva skjer da?
 
-- [ ] Du kan ikke endre på __0__ i `velg tilfeldig`{.microbitmath}-klossen. I
-stedet kan du kombinere denne klossen med `0 + 0`{.microbitmath}-klossen som du
-også finner i `Matematikk`{.microbitmath}-kategorien.
+- [ ] Du kan også endre på __0__ i `velg tilfeldig`{.microbitmath}-klossen. Hva 
+betyr det for utfallet hvis du endrer på denne?
 
 
 # Steg 3: Terningen ruller {.activity}
@@ -175,10 +174,11 @@ Her vil vi sammenligne resultatet av terningkastet med tallet 6. Vi kan si at
     for (let i = 0; i < 4; i++) {
         terning = 1 + Math.randomRange(0, 5)
         basic.showNumber(terning)
-    }
-    if (terning == 6) {
+        if (terning == 6) {
         basic.showIcon(IconNames.Happy)
+        }
     }
+    
   })
   ```
 
